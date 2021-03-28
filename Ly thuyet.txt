@@ -1,0 +1,14 @@
+1. mảng không thêm được khi số phần tử của mảng = số phần tử tối đa mà mảng đã khai báo ban đầu;
+2. mảng không xóa được khi mảng chỉ có 1 phần tử.
+3. Trình bày lần lượt hướng duyệt của thuật toán thêm
++ xác định vi trí cần thêm : vt
++ thực hiện tinh tiến lần lượt cac phần tử cần thêm về phia sau ;
+for(int i=n;i>vt;i--){
+a[i]=a[i-1];
+}
++thực  hiện chèn phần tử x vào vtri cần thêm :
+a[vt]=x;
++ tang mang len 1 don vi;
+n++;
+thuật toán xóa : 
++ 
