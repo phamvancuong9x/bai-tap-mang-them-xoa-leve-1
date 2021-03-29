@@ -37,6 +37,7 @@ void xuat_mang(int a[], int n) {
 	for (int i = 0; i < n; i++) {
 		cout << "Phan tu a[" << i << "] : " << a[i] << endl;
 	}
+	if(n==0){cout<<"mang khong ton tai phan tu nao";}
 }
 bool so_doi_xung(int n) {
 	int n1 = n;
@@ -59,7 +60,6 @@ void xoa_so_doi_xung(int a[], int &n) {
 }
 void xoa_mang(int a[], int &n, int vt) 
 {
-	if (n == 1) { cout << "mang  con 1 phan tu khong the xoa a[0] : "<<a[0]<<endl; }
 			for (int i = vt; i < n - 1; i++) {
 				a[i] = a[i + 1];
 			}
