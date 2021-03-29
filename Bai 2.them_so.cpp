@@ -45,10 +45,6 @@ bool so_hoan_thien(int m) {
 	else { return false; }
 }
 void them_mang(int a[], int& n,int vt,int x) {
-	if (n == MAX) {
-		cout << "Mang da dat toi da khong the them nua";
-		return;
-	}
 	for (int i = n; i > vt; i--) {
 		a[i] = a[i - 1];
 	}
@@ -59,6 +55,10 @@ void them_mang2(int a[],int &n,int x) {
 	for (int i = 0; i < n; i++) {
 	
 		if (so_hoan_thien(a[i]) == true) {
+			if (n == MAX) {
+				cout << "Mang da dat toi da khong the them nua\n";
+				return;
+			}
 			them_mang(a, n, i,x);
 			i++;
 		}
